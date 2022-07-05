@@ -1,0 +1,29 @@
+{
+
+    "manifest_version": 2,
+    "name": "Paste and Save Notepad",
+    "version": "1.0",
+  
+    "description": "A paste and save notepad",
+  
+    "icons": {
+      "48": "icons/note.png",
+      "64": "icons/note.png"
+    },
+
+    "browser_action": {
+        "browser_style": true,
+        "default_popup": "note.html",
+        "default_icon": {
+          "16": "icons/note.png",
+          "32": "icons/note.png",
+          "96": "icons/note.png",
+          "128": "icons/note.png"
+        }
+      },
+    
+
+    "permissions": ["activeTab", "tabs", "<all_urls>"]
+    
+  
+  }

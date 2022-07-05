@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <style type="text/css">
+        body {width:500; height:450;margin:0;padding:0;background-color: #ffff07;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/trix.css">
+    <script type="text/javascript" src="js/trix.js"></script>
+</head>
+<body>
+    <form …>
+        <input id="x" type="hidden" name="content">
+        <textarea id="note" rows="10" cols="40"></textarea>
+    </form>
+  <button id="btnSave">Save</button>
+
+  <script src="background.js"></script>
+
+  <!-- <script>
+    function download(file, text) {
+      
+      //creating an invisible element
+      var element = document.createElement('a');
+      element.setAttribute('href', 
+      'data:text/plain;charset=utf-8, '
+      + encodeURIComponent(text));
+      element.setAttribute('download', file);
+    
+      // Above code is equivalent to
+      // <a href="path of file" download="file name">
+    
+      document.body.appendChild(element);
+    
+      //onClick property
+      element.click();
+    
+      document.body.removeChild(element);
+  }
+    
+  // Start file download.
+  document.getElementById("btnSave")
+  .addEventListener("click", function() {
+      // Generate download of hello.txt 
+      // file with some content
+      var text = document.getElementById("note").value;
+      var filename = "note.txt";
+    
+      download(filename, text);
+  }, false);
+  </script> -->
+</body>
+</html>
